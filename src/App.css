@@ -1,0 +1,13 @@
+* {
+  min-width: 0;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.link {
+  text-decoration: none;
+}
+
+hr {
+  margin: 3%;
+  border-color: #616779;
+}
