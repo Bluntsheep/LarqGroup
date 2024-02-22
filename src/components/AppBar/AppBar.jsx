@@ -13,14 +13,7 @@ import "../../App.css";
 import { Link } from "react-router-dom";
 import logo from "../../images/logo.svg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-
-const pages = [
-  { name: "HOME", location: "home" },
-  { name: "ABOUT", location: "about" },
-  { name: "SOCIAL", location: "social" },
-  { name: "MISSION", location: "mission" },
-  { name: "CONTACT", location: "contact" },
-];
+import pages from "../data/navLinkData";
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -28,18 +21,11 @@ function ResponsiveAppBar() {
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  // const handleOpenUserMenu = (event) => {
-  //   setAnchorElUser(event.currentTarget);
-  // };
 
   const handleCloseNavMenu = (e) => {
     setAnchorElNav(null);
     console.log(e);
   };
-
-  // const handleCloseUserMenu = () => {
-  //   setAnchorElUser(null);
-  // };
 
   return (
     <AppBar position="sticky" sx={{ background: "#1E1E1E", boxShadow: "none" }}>

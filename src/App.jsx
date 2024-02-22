@@ -19,6 +19,8 @@ import image4 from "./images/imageSample4.jpg";
 import image5 from "./images/imageSample5.jpg";
 import mission from "./images/missionImage.jpg";
 import InfoBox from "./components/infoBox";
+import details from "./components/data/contactDetails";
+import values from "./components/data/valuesAndCulture";
 
 function App() {
   const background = mainbackground;
@@ -31,27 +33,6 @@ function App() {
     { text: "COMMERCIAL  ", icon: commercial },
     { text: "CONSERVATION   ", icon: conservation },
     { text: "PUBLIC   ", icon: publicIcon },
-  ];
-
-  const details = [
-    {
-      image: "/cindyImage.jpg",
-      name: "Cindy Greyling",
-      cell: "079 697 6336",
-      email: "info@larqgroup.co.za",
-    },
-    {
-      image: "arnoImage.jpg",
-      name: "Arno Coetzer",
-      cell: "074 941 0363",
-      email: "arno@larqgroup.co.za",
-    },
-    {
-      image: "ronnieImage.jpg",
-      name: "Ronnie Coetzer",
-      cell: "072 456 1065",
-      email: "ronnie@larqgroup.co.za",
-    },
   ];
 
   const theme = createTheme({
